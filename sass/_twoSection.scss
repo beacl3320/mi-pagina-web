@@ -43,6 +43,11 @@
         object-fit: cover;
     }
 
+    & .showImage {
+        transform: scale(1);
+        /* transform: scale(0); */
+    }
+
     & .close {
         position: absolute;
         top: 15px;
@@ -52,14 +57,13 @@
     }
 }
 
-.showImage {
-    transform: scale(1);
-    /* transform: scale(0); */
-}
-
 .show {
     transform: translate(0);
 }
+
+
+
+
 
 @media (max-width: 800px) {
     .imagen-light {

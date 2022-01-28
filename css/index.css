@@ -175,17 +175,16 @@
   transition: transform 0.3s 0.2s;
   object-fit: cover;
 }
+.imagen-light .showImage {
+  transform: scale(1);
+  /* transform: scale(0); */
+}
 .imagen-light .close {
   position: absolute;
   top: 15px;
   right: 15px;
   width: 40px;
   cursor: pointer;
-}
-
-.showImage {
-  transform: scale(1);
-  /* transform: scale(0); */
 }
 
 .show {
