@@ -2,7 +2,7 @@ footer {
     background: #9f8ad0;
     padding-bottom: 0.1px;
 
-    & .footer-content{
+    & .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -10,26 +10,26 @@ footer {
         padding-top: 60px;
         padding-bottom: 60px;
 
-        & .contact-us{
+        & .contact-us {
             width: 40%;
             color: #fff;
 
-            & .brand{
+            & .brand {
                 font-weight: 500;
                 font-size: 40px;
             }
 
-            & p{
+            & p {
                 font-weight: 700;
             }
         }
 
-        & .social-media{
+        & .social-media {
             width: 50%;
             display: flex;
             justify-content: flex-end;
 
-            & .social-media-icon{
+            & .social-media-icon {
                 display: inline-block;
                 margin-left: 20px;
                 width: 60px;
@@ -39,25 +39,60 @@ footer {
                 text-align: center;
                 color: #fff;
 
-                & i{
+                & i {
                     font-size: 30px;
                     line-height: 60px;
                 }
             }
 
-            & .social-media-icon:hover{
+            & .social-media-icon:hover {
                 background: #fff;
                 color: #764ba2;
             }
         }
     }
 
-    & .line{
+    & .line {
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
         height: 2px;
         background: #fff;
         margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        & .footer-content {
+            justify-content: center;
+
+            & .contact-us {
+                text-align: center;
+                width: 80%;
+                margin-bottom: 40px;
+            }
+
+            & .social-media {
+                width: 80%;
+                justify-content: space-evenly;
+                & i {
+                    margin-left: 0;
+                }
+                & .social-media-icon {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    footer {
+        & .footer-content {
+            & .social-media {
+                width: 100%;
+            }
+        }
     }
 }
