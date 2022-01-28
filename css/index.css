@@ -150,6 +150,29 @@
   transform: translate(0);
 }
 
+.experts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.experts .cont-expert {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.experts .cont-expert img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.experts .cont-expert .n-expert {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 400;
+}
+
 :root {
   scroll-behavior: smooth;
 }
