@@ -21,8 +21,8 @@
   justify-content: space-evenly;
   align-items: center;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-  /*  transition: transform .3 ease-in-out;
-  transform: translate(110%); */
+  transition: transform 0.3 ease-in-out;
+  transform: translate(110%);
 }
 .header .menu-navegacion a {
   color: #fff;
@@ -171,6 +171,61 @@
   margin-top: 20px;
   width: 100%;
   font-weight: 400;
+}
+
+footer {
+  background: #9f8ad0;
+  padding-bottom: 0.1px;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer .footer-content .contact-us {
+  width: 40%;
+  color: #fff;
+}
+footer .footer-content .contact-us .brand {
+  font-weight: 500;
+  font-size: 40px;
+}
+footer .footer-content .contact-us p {
+  font-weight: 700;
+}
+footer .footer-content .social-media {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .footer-content .social-media .social-media-icon {
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+footer .footer-content .social-media .social-media-icon i {
+  font-size: 30px;
+  line-height: 60px;
+}
+footer .footer-content .social-media .social-media-icon:hover {
+  background: #fff;
+  color: #764ba2;
+}
+footer .line {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 60px;
 }
 
 :root {
